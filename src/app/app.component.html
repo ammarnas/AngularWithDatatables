@@ -34,3 +34,44 @@
     </div>
   </div>
 </nav>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div style="width: 90%; margin: 0 auto; border: 1px solid; padding: 5px;">
+  <table datatable [dtOptions]="dtOptions" class="table table-striped mx-auto" style="">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let member of members">
+        <th scope="row">1</th>
+        <td>{{member.name}}</td>
+        <td>{{member.email}}</td>
+        <td>{{member.age}}</td>
+      </tr>
+      <!-- <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Larry the Bird</td>
+        <td>Larry the Bird</td>
+        <td>@twitter</td>
+        
+      </tr> -->
+    </tbody>
+  </table>
+</div>
